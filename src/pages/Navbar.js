@@ -11,13 +11,13 @@ function Navbar() {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate("/shop");
+    navigate("/");
   };
 
   return (
     <div className="container pt-5">
       <div className="flex flex--justify-between mb-10">
-        <div>
+        <div className="flex flex--align-center">
           <Link to="/" className={styles.link}>
             Home
           </Link>
@@ -28,7 +28,7 @@ function Navbar() {
         <h2 className={styles.head} onClick={handleClick}>
           BOUTIQUE
         </h2>
-        <div className="flex">
+        <div className="flex flex--align-center">
           <div className="flex">
             <FontAwesomeIcon
               icon="fa-solid fa-cart-shopping"

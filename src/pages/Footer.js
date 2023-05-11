@@ -3,10 +3,10 @@ import styles from "./Footer.module.scss";
 function Footer() {
   return (
     <div className="bg-dark">
-      <div className="container flex flex--justify-between p-30">
-        <div>
+      <div className="container flex-nm flex-nm--justify-between p-30 flex-dnm flex-dnm--column flex-dnm--align-center">
+        <div className="mb-5-sm">
           <h2 className={styles.head + " mb-5"}>CUSTOMER</h2>
-          <div className="flex flex--column">
+          <div className="flex flex--align-center flex--column">
             <a href="#" className={styles.link}>
               Help & Contact Us
             </a>
@@ -22,9 +22,9 @@ function Footer() {
           </div>
         </div>
 
-        <div>
+        <div className="mb-5-sm">
           <h2 className={styles.head + " mb-5"}>COMPANY</h2>
-          <div className="flex flex--column">
+          <div className="flex flex--align-center flex--column">
             <a href="#" className={styles.link}>
               What We Do
             </a>
@@ -40,9 +40,9 @@ function Footer() {
           </div>
         </div>
 
-        <div>
+        <div className="mb-5-sm">
           <h2 className={styles.head + " mb-5"}>SOCIAL MEDIA</h2>
-          <div className="flex flex--column">
+          <div className="flex flex--align-center flex--column">
             <a href="#" className={styles.link}>
               Twiter
             </a>

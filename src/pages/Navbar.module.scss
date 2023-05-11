@@ -3,6 +3,12 @@
     cursor: pointer;
 }
 
+@media (max-width: 575px) {
+    .head {
+        display: none;
+    }
+}
+
 .link {
     text-decoration: none;
     margin: 0px 5px;
