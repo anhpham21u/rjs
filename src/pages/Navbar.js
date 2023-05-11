@@ -2,23 +2,32 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fas } from "@fortawesome/free-solid-svg-icons";
+import { useNavigate } from "react-router-dom";
 import styles from "./Navbar.module.scss";
 
 library.add(fas);
 
 function Navbar() {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate("/shop");
+  };
+
   return (
     <div className="container pt-5">
       <div className="flex flex--justify-between mb-10">
         <div>
-          <Link to="/" className="link">
+          <Link to="/" className={styles.link}>
             Home
           </Link>
-          <Link to="/shop" className="link">
+          <Link to="/shop" className={styles.link}>
             Shop
           </Link>
         </div>
-        <h2 style={{ fontWeight: "400" }}>BOUTIQUE</h2>
+        <h2 className={styles.head} onClick={handleClick}>
+          BOUTIQUE
+        </h2>
         <div className="flex">
           <div className="flex">
             <FontAwesomeIcon
@@ -39,7 +48,6 @@ function Navbar() {
           </div>
         </div>
       </div>
-      <div className={styles.body}></div>
     </div>
   );
 }

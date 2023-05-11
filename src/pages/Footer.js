@@ -5,7 +5,7 @@ function Footer() {
     <div className="bg-dark">
       <div className="container flex flex--justify-between p-30">
         <div>
-          <h2 className={styles.head}>CUSTOMER</h2>
+          <h2 className={styles.head + " mb-5"}>CUSTOMER</h2>
           <div className="flex flex--column">
             <a href="#" className={styles.link}>
               Help & Contact Us
@@ -23,7 +23,7 @@ function Footer() {
         </div>
 
         <div>
-          <h2 className={styles.head}>COMPANY</h2>
+          <h2 className={styles.head + " mb-5"}>COMPANY</h2>
           <div className="flex flex--column">
             <a href="#" className={styles.link}>
               What We Do
@@ -41,7 +41,7 @@ function Footer() {
         </div>
 
         <div>
-          <h2 className={styles.head}>SOCIAL MEDIA</h2>
+          <h2 className={styles.head + " mb-5"}>SOCIAL MEDIA</h2>
           <div className="flex flex--column">
             <a href="#" className={styles.link}>
               Twiter

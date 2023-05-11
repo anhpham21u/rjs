@@ -17,19 +17,6 @@
     width: 1200px;
 }
 
-.link {
-    text-decoration: none;
-    margin: 0px 5px;
-
-    &:visited {
-        color: black;
-    }
-
-    &:hover {
-        color: #f3d88a;
-    }
-}
-
 .flex {
     display: flex;
 
@@ -40,6 +27,26 @@
     &--column {
         flex-direction: column;
     }
+}
+
+.btn {
+    background-color: #383838;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-style: italic;
+
+    &:hover {
+        background-color: #848484;
+    }
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
 }
 
 .mx-5 {
@@ -53,6 +60,14 @@
 
 .mb-10 {
     margin-bottom: 10px;
+}
+
+.mb-15 {
+    margin-bottom: 15px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
 }
 
 .p-10 {

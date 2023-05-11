@@ -1,4 +1,21 @@
-.body {
-    height: 60vh;
-    background-color: #faebd7;
+.head {
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.link {
+    text-decoration: none;
+    margin: 0px 5px;
+
+    &:link {
+        color: black;
+    }
+
+    &:visited {
+        color: black;
+    }
+
+    &:hover {
+        color: #f3d88a;
+    }
 }
