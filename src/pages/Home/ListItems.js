@@ -1,8 +1,17 @@
 import { useState, useEffect } from "react";
-import Item from "./Item";
+import Items from "./Items";
+import { Provider } from "react-redux";
+import { createStore, combineReducers } from "redux";
+import { popupReducer } from "../reducers";
 
 function ListItems() {
   const [data, setData] = useState([]);
+  // redux state for popup
+  const store = createStore(
+    combineReducers({
+      popupReducer,
+    })
+  );
 
   useEffect(() => {
     fetch(
@@ -13,21 +22,13 @@ function ListItems() {
       .catch((err) => console.error(err));
   }, []);
 
+  // const dataStore = store.getState().popupReducer;
+  // console.log(dataStore);
+
   return (
-    <div className="container">
-      <p className="text1">MADE THE HARD WAY</p>
-      <h2 className="text2 mb-30">TOP TRANDING PRODUCTS</h2>
-      {data.length > 0 && (
-        <div
-          className="flex flex--wrap flex--justify-center mb-50"
-          style={{ gap: "30px" }}
-        >
-          {data.map((data, idx) => (
-            <Item dataItem={data} key={idx} />
-          ))}
-        </div>
-      )}
-    </div>
+    <Provider store={store}>
+      <Items data={data} />
+    </Provider>
   );
 }
 
