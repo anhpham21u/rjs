@@ -33,10 +33,14 @@ function Popup({ data }) {
             <h2 className="text2 mb-10" style={{ textTransform: "uppercase" }}>
               {data.name}
             </h2>
-            <p className="text1 mb-10" style={{ fontSize: "18px" }}>
+
+            <p className="text1 mb-20" style={{ fontSize: "18px" }}>
               {priceFormatted} VND
             </p>
-            <p className="text1 mb-30">{data.short_desc}</p>
+            <p className={"text1 mb-20 " + styles.short_desc}>
+              {data.short_desc}
+            </p>
+
             <button className="btn">
               <FontAwesomeIcon
                 icon="fa-solid fa-cart-shopping"
@@ -45,7 +49,7 @@ function Popup({ data }) {
               View Detail
             </button>
           </div>
-          <div />
+          <div></div>
         </div>
       </div>
     </div>,

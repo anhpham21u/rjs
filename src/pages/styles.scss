@@ -1,3 +1,9 @@
+$unit: 1200px;
+
+@media (max-width: 768px) {
+    $unit: 500px;
+}
+
 * {
     padding: 0px;
     margin: 0px;
