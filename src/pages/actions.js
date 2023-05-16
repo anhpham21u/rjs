@@ -6,7 +6,7 @@ const showPopup = (product) => ({
   payload: product,
 });
 
-const hidePopup = (product) => ({
+const hidePopup = () => ({
   type: HIDE_POPUP,
 });
 

@@ -4,7 +4,6 @@ import Popup from "./Popup";
 
 function Items({ data }) {
   const dataPopup = useSelector((state) => state.popupReducer);
-  console.log(dataPopup.product);
 
   return (
     <div className="container">
