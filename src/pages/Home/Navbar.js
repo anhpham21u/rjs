@@ -11,17 +11,17 @@ function Navbar() {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate("/");
+    navigate("/rjs");
   };
 
   return (
     <div className="container pt-5">
       <div className="flex flex--justify-between mb-10">
         <div className="flex flex--align-center">
-          <Link to="/" className={styles.link}>
+          <Link to="/rjs" className={styles.link}>
             Home
           </Link>
-          <Link to="/shop" className={styles.link}>
+          <Link to="/rjs/shop" className={styles.link}>
             Shop
           </Link>
         </div>
