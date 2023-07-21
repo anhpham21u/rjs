@@ -1,4 +1,9 @@
 import useToPage from "./useToPage";
+import product_1 from "./../../assets/img-project/product_1.png";
+import product_2 from "./../../assets/img-project/product_2.png";
+import product_3 from "./../../assets/img-project/product_3.png";
+import product_4 from "./../../assets/img-project/product_4.png";
+import product_5 from "./../../assets/img-project/product_5.png";
 
 function Categories() {
   const toPage = useToPage();
@@ -16,13 +21,13 @@ function Categories() {
 
       <div className="flex flex--justify-between mb-20">
         <img
-          src="img-project/product_1.png"
+          src={product_1}
           width="49%"
           className="hov"
           onClick={handleClick}
         />
         <img
-          src="img-project/product_2.png"
+          src={product_2}
           width="49%"
           className="hov"
           onClick={handleClick}
@@ -30,19 +35,19 @@ function Categories() {
       </div>
       <div className="flex flex--justify-between">
         <img
-          src="img-project/product_3.png"
+          src={product_3}
           width="32%"
           className="hov"
           onClick={handleClick}
         />
         <img
-          src="img-project/product_4.png"
+          src={product_4}
           width="32%"
           className="hov"
           onClick={handleClick}
         />
         <img
-          src="img-project/product_5.png"
+          src={product_5}
           width="32%"
           className="hov"
           onClick={handleClick}

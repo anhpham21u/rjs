@@ -1,5 +1,6 @@
 import styles from "./Banner.module.scss";
 import useToPage from "./useToPage.js";
+import banner1 from "./../../assets/img-project/banner1.jpg";
 
 function Banner() {
   const toPage = useToPage();
@@ -11,7 +12,7 @@ function Banner() {
   return (
     <div
       className={styles.body + " container relative"}
-      style={{ backgroundImage: `url(./img-project/banner1.jpg)` }}
+      style={{ backgroundImage: `url(${banner1})` }}
     >
       <div className={styles.child + " absolute"}>
         <p className="text1 mb-5">NEW INSPIRATION</p>
